@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Ollieblox</title>
+    <link rel="icon" type="x-icon" href="weblogo.png">
+    <link rel="shortcut icon" type="x-icon" href="weblogo.png">
+    <link rel="stylesheet" onerror="Roblox.BundleDetector && Roblox.BundleDetector.reportBundleError(this)" data-bundlename="Maincss" data-bundle-source="Main" href="CSS/.css" />
+    <style>
+        .logo {background-image: url(officiallogo.png) ; background-size: 125%;} .profile {background-image: url(); background-size: 100%;}
+        #spinner {background: rgb(244, 244, 244) url(loadingforabout.gif) no-repeat center center; background-size: 9%;}
+    </style>
+</head>
+<body>
+    <nav>
+        <button class="logo"></button>
+        <a href="pages/games.html" class="Games">Games</a>
+        <a href="pages/avatar.html" class="Avatar-shop">Avatar Shop</a>
+        <a href="pages/develop.html" class="Create">Create</a>
+    </nav>
+    <div class="main">
+        <div class="top-area">
+            <div class="upper-top">
+                <button class="profile">
+                    <img src="" class="image loading">
+                </button>
+                <div class="your-most-played">
+                    <p class="sign">Your Most Played</p>
+                </div>
+            </div>
+            <div class="friends-list">
+                <a href="pages/friends/allfriends.html"><p class="friends-text">Friends</p></a>
+                <button class="friends"></button>
+                <button class="friends"></button>
+                <button class="friends"></button>
+                <button class="friends"></button>
+                <button class="friends"></button>
+                <button class="friends"></button>
+                <button class="friends"></button>
+                <button class="friends"></button>
+            </div>
+        </div>
+        <div class="games-area">
+
+            <div id="spinner"></div>
+
+            <div class="skelload">
+                <p class="games loading"></p>
+                <button class="gameicon loading"></button>
+                <p class="gamename loading"></p>
+                <script>
+                    setTimeout(() => {
+                       fetchData()
+                    }, 300)
+              
+                    function fetchData() {
+                        const games = document.querySelector('.games')
+                       const gameicon = document.querySelector('.gameicon')
+                       const gamename = document.querySelector('.gamename')
+                       const image = document.querySelector('.image')
+              
+                       gameicon.innerHTML = "<img src='https://yt3.ggpht.com/UEs6-9QnFeuX4Pd6X0_OUCP4-LJ6Mo6V2pz-o57ewzAVOyEWPCQrVwj5S73tXF9Bpwb8UteQGA=s176-c-k-c0x00ffffff-no-rj/'/>"
+                       gameicon.classList.remove('loading')
+                       gamename.innerHTML = "[Event] Plaid Battles!"
+                       gamename.classList.remove('loading')
+                       games.innerHTML = "Continue"
+                       games.classList.remove('loading')
+                       image.innerHTML = "<img src='https://tr.rbxcdn.com/1ed285c5bce08d1c4f07f46e5310bad4/150/150/AvatarHeadshot/Png'/>"
+                       image.classList.remove('image')
+                    }
+                </script>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="bottom-area">
+
+    </div>
+    <script>
+      var loader = document.getElementById("spinner");
+  window.addEventListener("load", function(){
+      loader.style.display = "none" 
+  }) 
+    </script>
+</body>
+</html>

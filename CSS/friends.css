@@ -1,0 +1,31 @@
+nav {
+    background-color: rgb(43, 152, 255);
+    height: 50px;
+    width: 100%;
+}
+.logo {
+    background: rgb(43, 152, 255);
+    margin-left: 20px;
+    margin-top: 5px;
+    height: 40px;
+    width: 40px;
+    border: 0px solid;
+}
+a {
+    color: black;
+}
+.Games {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.Avatar-shop {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.Create {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+}
